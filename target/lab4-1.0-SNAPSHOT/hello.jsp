@@ -9,7 +9,7 @@
     <body>
         <h1>Cześć, <c:out value="${osoba.firstName}"/>!</h1>
         <h1>Witaj, ${osoba.firstName} ${osoba.lastName}!</h1>
-         <a href="${email}">mailto:${osoba.email}</a> 
+        <a href="mailto:${osoba.email}"> emailto:${osoba.email}<a>
     </body>
     
     <c:forEach items="${dniTygodnia}" var="dzien">
@@ -17,5 +17,5 @@
         ${dzien}
     </p>
     </c:forEach>
-    
+  
 </html>
